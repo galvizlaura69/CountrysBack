@@ -1,6 +1,5 @@
 const express = require('express');
 const axios = require('axios');
-const { resolve } = require('path');
 
 const app = express();
 const port = 3010;
@@ -37,7 +36,6 @@ app.post('/', async (req, res) => {
   const { country } = req.body;
   const cleanCountry = country.toLowerCase();
   let mainDataCountry = `No hay datos para ${country}`;
-
   try {
     const { data } = await axios.get(`${baseUrl}name/${cleanCountry}`);
     const countryData = data[0];
