@@ -13,7 +13,6 @@ app.get('/:country', async (req, res) => {
   const { country } = req.params;
   const cleanCountry = country.toLowerCase();
   let mainDataCountry = `No hay datos para ${country}`;
-
   try {
     const { data } = await axios.get(`${baseUrl}name/${cleanCountry}`);
     const countryData = data[0];
