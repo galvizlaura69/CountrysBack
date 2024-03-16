@@ -35,7 +35,6 @@ app.get('/:country', async (req, res) => {
 });
 
 app.post('/', async (req, res) => {
-  console.log(req.body,"respuesta");
   const { country } = req.body;
   const cleanCountry = country.toLowerCase();
   let mainDataCountry = `No hay datos para ${country}`;
