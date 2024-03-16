@@ -1,7 +1,11 @@
-# Simple express demo
-
-> Express: fast, unopinionated, minimalist web framework for Node.js
-
-This project shows a simple express server serving a single HTML page and using `express.static` to serve static files.
-
-Check out the [express documentation](https://expressjs.com/) for more information.
+- 1- Version de node.js 18.14.0
+- 2- git clone https://github.com/galvizlaura69/CountrysBack.git
+- 3- npm i
+- 4- npm start
+- 5- La aplicacion corre en el puerta 3010
+- 6- Para probar el post en postman:
+- - curl --location 'http://localhost:3010/' \
+--header 'Content-Type: application/json' \
+--data '{
+  "country": "nombredelpais"
+}
